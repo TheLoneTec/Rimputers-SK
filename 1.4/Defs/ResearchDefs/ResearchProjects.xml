@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchProjectDef>
+		<defName>Rimputer_Calculator</defName>
+		<label>Mechanical Calculator</label>
+		<tab>Rimputing</tab>
+		<description>Doing all our calculations by hand is a slow process prone to error. An infallible machine would reduce the margin of error for new projects and in turn accelerate future discoveries.</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>Smithing</li>
+		</prerequisites>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Rimputer_Differenceengine</defName>
+		<label>Difference Engine</label>
+		<tab>Rimputing</tab>
+		<description>Mechanical engineering can be applied to build calculators capable of advanced mathematical functions. To construct one will require a master engineer with a massive budget. The challenge is too great for most societies, those who succeed will achieve the apex of mechanical computing.</description>
+		<baseCost>3000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>Rimputer_Calculator</li>
+		</prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Rimputer_tape</defName>
+		<label>Tape Storage</label>
+		<tab>Rimputing</tab>
+		<description>Mechanical computers suffer from exponential complexity gains for minor computational improvements, the future must be digital.</description>
+		<baseCost>5000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Electricity</li>
+		</prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>Rimputer_server</defName>
+		<label>Server Rack</label>
+		<tab>Rimputing</tab>
+		<description>The advent of the microprocessor brings limitless potential. The computers we use to rely on will be antiques compared to the processing power and data storage capabilities of modern servers.</description>
+		<baseCost>7000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>MicroelectronicsBasics</li>
+			<li>Rimputer_tape</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<researchViewX>3</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>Rimputer_supercomputer</defName>
+		<label>Super Computers</label>
+		<tab>Rimputing</tab>
+		<description>With each generation processors become smaller and in turn processing power increases exponentially. We are running up against the physical limitations of this process and also dealing with ever increasing cooling problems.</description>
+		<baseCost>9000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>MultiAnalyzer</li>
+			<li>Rimputer_server</li>
+		</prerequisites>
+	    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+		 <li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>4</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Rimputer_quantumcomputer</defName>
+		<label>Quantum Computers</label>
+		<tab>Rimputing</tab>
+		<description>Shrinking components can only take us so far, we need to translate quantum theory into real world computing to create machines capable of solving problems no conventional computer can.</description>
+		<baseCost>10000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+		<li>AdvancedFabrication</li>
+		<li>Rimputer_supercomputer</li>
+		</prerequisites>
+	    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+		 <li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>5</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>

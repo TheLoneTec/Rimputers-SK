@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BuildingBase">
+		<defName>RP_MechanicalCalculator</defName>
+		<label>Colony Mechanical Calculator</label>
+		<description>The mightiest ambition can be felled by simple errors, this machine removes those errors ensuring our civilization can advance with confidence in its design.</description>
+		<graphicData>
+			<texPath>Computers/MechanicalCalculator</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>5500</WorkToBuild>
+			<Mass>500</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<ComponentIndustrial>10</ComponentIndustrial>
+		</costList>
+		<researchPrerequisites>
+			<li>Rimputer_Calculator</li>
+		</researchPrerequisites>
+		<designationCategory>Misc</designationCategory>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<ResearchSpeedFactor>0.05</ResearchSpeedFactor>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RP_DifferenceEngine</defName>
+		<label>Colony Difference Engine</label>
+		<description>Mechanical engineering can be applied to build calculators capable of advanced mathematical functions. To construct one will require a master engineer with a massive budget. The challenge is too great for most pre-electric societies, those who succeed will achieve the apex of mechanical computing.</description>
+		<graphicData>
+			<texPath>Computers/DifferenceEngine</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.5,3.5)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToBuild>5500</WorkToBuild>
+			<Mass>500</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<size>(3,2)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>300</costStuffCount>
+		<costList>
+			<ComponentIndustrial>100</ComponentIndustrial>
+		</costList>
+		<researchPrerequisites>
+			<li>Rimputer_Differenceengine</li>
+		</researchPrerequisites>
+		<designationCategory>Misc</designationCategory>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<ResearchSpeedFactor>0.4</ResearchSpeedFactor>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RP_TapeStorage</defName>
+		<label>Colony Tape Storage</label>
+		<description>An early generation of computer relying on reels of tape to store data. While terminals are being developed, the majority of work must still done by hand making a manually readable tape necessary. This can connect to simple and high tech research benches. There is no limit to the number of tape storage drives which can connect to one bench.</description>
+		<graphicData>
+			<texPath>Computers/TapeStorage</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.5,1.5)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.35</staticSunShadowHeight>
+		<fillPercent>0.5</fillPercent>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Mass>200</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>75</costStuffCount>
+		<costList>
+			<Silver>45</Silver>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<researchPrerequisites>
+			<li>Rimputer_tape</li>
+		</researchPrerequisites>
+		<designationCategory>Misc</designationCategory>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>75</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<ResearchSpeedFactor>0.06</ResearchSpeedFactor>
+				</statOffsets>
+				<maxSimultaneous>99</maxSimultaneous>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>RP_Server</defName>
+		<label>Colony Server Rack</label>
+		<description>Computers which used to take up entire rooms are now dwarfed in efficiency by a single server rack. Capable of storing and transferring terrabytes of data, these render older computers obsolete. As long as we can keep them cool. Up to four can connect to one bench.</description>
+		<graphicData>
+			<texPath>Computers/ServerRack</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.5,1.5)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.35</staticSunShadowHeight>
+		<fillPercent>0.5</fillPercent>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>2500</WorkToBuild>
+			<Mass>200</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<Silver>75</Silver>
+			<Gold>15</Gold>
+			<ComponentIndustrial>10</ComponentIndustrial>
+		</costList>
+		<researchPrerequisites>
+			<li>Rimputer_server</li>
+		</researchPrerequisites>
+		<designationCategory>Misc</designationCategory>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>200</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_HeatPusher">
+			  <compClass>CompHeatPusherPowered</compClass>
+			  <heatPerSecond>2</heatPerSecond>
+			</li>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<ResearchSpeedFactor>0.1</ResearchSpeedFactor>
+				</statOffsets>
+				<maxSimultaneous>4</maxSimultaneous>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>RP_SuperComputer</defName>
+		<label>Colony Super Computer</label>
+		<description>Unparalleled computing power is needed to unravel the remaining mysteries we face. We face the limits of miniaturization, any smaller and our systems simply won't run. A simple workaround is to connect many super computers, as many as our colony can handle. At this scale the heat generated is too great for air cooling alone, we need water to carry away excess heat. Few colonies will have the power and water to maintain large data centres yet those which do will enjoy unparalleled discovery. There is no limit to the number of super computers which can connect to one bench.</description>
+		<graphicData>
+			<texPath>Computers/Supercomputer</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<castEdgeShadows>true</castEdgeShadows>
+		<tickerType>Normal</tickerType>
+		<staticSunShadowHeight>0.35</staticSunShadowHeight>
+		<fillPercent>0.5</fillPercent>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>4500</WorkToBuild>
+			<Mass>200</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(2,1)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>250</costStuffCount>
+		<costList>
+			<Silver>125</Silver>
+			<Gold>70</Gold>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<researchPrerequisites>
+			<li>Rimputer_supercomputer</li>
+		</researchPrerequisites>
+		<designationCategory>Misc</designationCategory>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<comps>
+			<li Class="DubsBadHygiene.CompProperties_Pipe">
+				<mode>Sewage</mode>
+			</li>
+			<li Class="Rimputers.CompProperties_WaterConsumer">
+				<waterPerTick>0.008</waterPerTick>
+			</li>		
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>400</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_HeatPusher">
+			  <compClass>CompHeatPusherPowered</compClass>
+			  <heatPerSecond>5</heatPerSecond>
+			</li>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<ResearchSpeedFactor>.40</ResearchSpeedFactor>
+				</statOffsets>
+				<maxSimultaneous>99</maxSimultaneous>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>Rimputer_quantumcomputer</defName>
+		<label>Colony Quantum Computer</label>
+		<description>The application of quantum states in computer design enables us to bypass the limitations of our industrial era designs. To create the conditions for these quantum states our computers must double as cryogenic chambers. This will require enormous systems of coolant and temperature mitigation. Only a single quantum computer is needed.</description>
+		<graphicData>
+			<texPath>Computers/QuantumComputerShell</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.5,3.5)</drawSize>
+			<damageData>
+				<rect>(0.05,0.05,0.95,0.95)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<tickerType>Normal</tickerType>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.35</staticSunShadowHeight>
+		<fillPercent>0.5</fillPercent>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>10000</WorkToBuild>
+			<Mass>200</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(3,3)</size>
+		<costList>
+			<Silver>1000</Silver>
+			<ComponentSpacer>20</ComponentSpacer>
+			<ComponentIndustrial>30</ComponentIndustrial>
+			<Steel>300</Steel>
+			<Plasteel>200</Plasteel>
+			<Gold>150</Gold>
+		</costList>
+		<researchPrerequisites>
+			<li>Rimputer_quantumcomputer</li>
+		</researchPrerequisites>
+		<designationCategory>Misc</designationCategory>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<comps>
+			<li Class="DubsBadHygiene.CompProperties_Pipe">
+				<mode>Sewage</mode>
+			</li>
+			<li Class="Rimputers.CompProperties_WaterConsumer">
+				<waterPerTick>0.1</waterPerTick>
+			</li>	
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>5000</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_HeatPusher">
+			  <compClass>CompHeatPusherPowered</compClass>
+			  <heatPerSecond>50</heatPerSecond>
+			</li>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<ResearchSpeedFactor>3.00</ResearchSpeedFactor>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+			</li>		
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+	</ThingDef>
+
+</Defs>
