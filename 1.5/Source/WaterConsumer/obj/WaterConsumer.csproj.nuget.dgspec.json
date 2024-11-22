@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Users\\kacey\\Documents\\GitHub\\Rimputers-SK\\1.5\\Source\\WaterConsumer\\WaterConsumer.csproj": {}
+  },
+  "projects": {
+    "E:\\Users\\kacey\\Documents\\GitHub\\Rimputers-SK\\1.5\\Source\\WaterConsumer\\WaterConsumer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Users\\kacey\\Documents\\GitHub\\Rimputers-SK\\1.5\\Source\\WaterConsumer\\WaterConsumer.csproj",
+        "projectName": "WaterConsumer",
+        "projectPath": "E:\\Users\\kacey\\Documents\\GitHub\\Rimputers-SK\\1.5\\Source\\WaterConsumer\\WaterConsumer.csproj",
+        "packagesPath": "C:\\Users\\kacey\\.nuget\\packages\\",
+        "outputPath": "E:\\Users\\kacey\\Documents\\GitHub\\Rimputers-SK\\1.5\\Source\\WaterConsumer\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\kacey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Krafs.Publicizer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Krafs.Rimworld.Ref": {
+              "target": "Package",
+              "version": "[1.5.*, )"
+            },
+            "Lib.Harmony": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[2.3.3, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

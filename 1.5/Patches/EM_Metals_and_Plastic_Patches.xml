@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>	
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>Expanded Materials - Metals</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "RP_TapeStorage"]/costList</xpath>
+				<value>
+					<costList>
+					<VMEu_Copper>45</VMEu_Copper>
+					<ComponentIndustrial>4</ComponentIndustrial>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "RP_Server"]/costList</xpath>
+				<value>
+					<costList>
+					<VMEu_Copper>75</VMEu_Copper>
+					<Gold>15</Gold>
+					<ComponentIndustrial>10</ComponentIndustrial>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "RP_SuperComputer"]/costList</xpath>
+				<value>
+					<costList>
+					<VMEu_Copper>125</VMEu_Copper>
+					<Gold>70</Gold>
+					<ComponentIndustrial>5</ComponentIndustrial>
+					<ComponentSpacer>3</ComponentSpacer>
+					</costList>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Rimputer_quantumcomputer"]/costList</xpath>
+				<value>
+					<costList>
+					<VMEu_Copper>1000</VMEu_Copper>
+					<ComponentSpacer>20</ComponentSpacer>
+					<ComponentIndustrial>30</ComponentIndustrial>
+					<Steel>300</Steel>
+					<Plasteel>200</Plasteel>
+					<Gold>150</Gold>
+					</costList>
+				</value>
+			</li>
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "/OfUjk3wm8hGtWFrNApr9lKEkG0/U3e9SqZiVNxA13IenzJeq5aicQxkKvrKdly4AKgP43Xk+o49anJ7GsOKCA==",
+  "success": true,
+  "projectFilePath": "E:\\Users\\kacey\\Documents\\GitHub\\Rimputers-SK\\1.5\\Source\\WaterConsumer\\WaterConsumer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kacey\\.nuget\\packages\\krafs.publicizer\\2.0.1\\krafs.publicizer.2.0.1.nupkg.sha512",
+    "C:\\Users\\kacey\\.nuget\\packages\\krafs.rimworld.ref\\1.5.4243\\krafs.rimworld.ref.1.5.4243.nupkg.sha512",
+    "C:\\Users\\kacey\\.nuget\\packages\\lib.harmony\\2.3.3\\lib.harmony.2.3.3.nupkg.sha512"
+  ],
+  "logs": []
+}
