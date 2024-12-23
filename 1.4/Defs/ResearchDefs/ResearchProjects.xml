@@ -8,7 +8,7 @@
 		<baseCost>1500</baseCost>
 		<techLevel>Medieval</techLevel>
 		<prerequisites>
-			<li>Smithing</li>
+			<li>Craft_B1</li>
 		</prerequisites>
 		<researchViewX>0</researchViewX>
 		<researchViewY>1</researchViewY>
