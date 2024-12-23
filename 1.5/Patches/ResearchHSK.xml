@@ -17,7 +17,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="Rimputer_Calculator"]/researchViewY</xpath>
                 <value>
-                    <researchViewY>28.00</researchViewY>
+                    <researchViewY>26.00</researchViewY>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
@@ -50,13 +50,13 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="Rimputer_Differenceengine"]/researchViewX</xpath>
                 <value>
-                    <researchViewX>6.00</researchViewX>
+                    <researchViewX>5.00</researchViewX>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
                 <xpath>Defs/ResearchProjectDef[defName="Rimputer_Differenceengine"]/researchViewY</xpath>
                 <value>
-                    <researchViewY>28.00</researchViewY>
+                    <researchViewY>26.00</researchViewY>
                 </value>
             </li>
 			<li Class="PatchOperationReplace">
